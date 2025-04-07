@@ -34,7 +34,7 @@ const BirthdayCard = () => {
 
   return (
     <section
-      className="md:h-screen md:min-h-full min-h-[130vh] flex items-center justify-center relative bg-black overflow-hidden"
+      className="md:h-screen md:min-h-full min-h-[155vh] flex items-center justify-center relative bg-black overflow-hidden"
       onMouseEnter={handleInteraction}
       onTouchStart={handleInteraction}
       onClick={handleInteraction}
@@ -57,18 +57,18 @@ const BirthdayCard = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="w-full h-full md:py-28 md:px-40 rounded absolute border border-gray-500 grid md:grid-cols-2 grid-cols-1 md:gap-4"
+        className="w-full h-full md:py-28 md:px-40 rounded absolute border border-gray-500 grid md:grid-cols-2 grid-cols-1 md:gap-8"
       >
         {/* Left (image) */}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="h-full flex flex-col md:items-start justify-center md:justify-start p-3 md:max-h-fit max-h-[50vh] gap-3"
+          className="h-full flex flex-col md:items-start justify-center md:justify-start p-3 md:max-h-fit max-h-[50vh] gap-3 items-center"
         >
           <img
             src={img}
-            className="border w-52 h-52 border-secondary object-cover object-top rounded-full mt-10"
+            className="border w-52 h-52 border-secondary object-cover object-top rounded-full mt-14"
             alt="Birthday Celebrant"
           />
           <ShinyText> Happy Birthday! </ShinyText>
@@ -92,7 +92,7 @@ const BirthdayCard = () => {
                   repeatType: "reverse",
                   duration: 1,
                 }}
-                className="absolute z-50 text-white text-center text-xl md:bottom-48 bottom-8 py-2 px-3 bg-accent rounded-full font-poppins"
+                className="absolute z-50 text-white text-center text-xl md:bottom-48 bottom-4 py-2 px-3 bg-accent rounded-full font-poppins"
               >
                 click anywhere 🎶🎉
               </motion.button>
