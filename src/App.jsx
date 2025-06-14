@@ -3,7 +3,7 @@ import BirthdayCard from "./components/BirthdayCard";
 
 const App = () => {
   return (
-    <div>
+    <div >
      <BirthdayCard />
     </div>
   );
